@@ -1,0 +1,17 @@
+<%= form_for(@urban_eagle) do |f| %>
+  <% if @urban_eagle.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@urban_eagle.errors.count, "error") %> prohibited this urban_eagle from being saved:</h2>
+
+      <ul>
+      <% @urban_eagle.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

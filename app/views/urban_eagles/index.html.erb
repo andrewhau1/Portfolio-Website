@@ -1,0 +1,23 @@
+<h1>Listing urban_eagles</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @urban_eagles.each do |urban_eagle| %>
+      <tr>
+        <td><%= link_to 'Show', urban_eagle %></td>
+        <td><%= link_to 'Edit', edit_urban_eagle_path(urban_eagle) %></td>
+        <td><%= link_to 'Destroy', urban_eagle, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Urban eagle', new_urban_eagle_path %>
