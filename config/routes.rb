@@ -1,15 +1,29 @@
 Rails.application.routes.draw do
   resources :contacts
 
+  get 'contact' => 'contacts#index'
+
   resources :blogs
+
+  get 'blog' => 'blogs#index'
 
   resources :portfolios
 
+  get '/portfolio' => 'portfolios#index'
+
   resources :urban_eagles
+
+  get '/urban_eagles' => 'urban_eagles#index'
 
   resources :abouts
 
+  get '/about' => 'abouts#index'
+
   resources :homes
+
+  root 'homes#index'
+
+  get '/' => 'homes#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
