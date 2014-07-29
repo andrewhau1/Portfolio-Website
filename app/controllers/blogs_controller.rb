@@ -4,7 +4,21 @@ class BlogsController < ApplicationController
   # GET /blogs
   # GET /blogs.json
   def index
-    @blogs = Blog.all
+    @key = 'e36uAEpmBjyZRd4Ftw2ymHwwqJZZAoTZIraNPjLrzv9afWRT8f'
+    @secret = 'QGbjpUgInPj8A3cSxfbxSNrZdUKXftV6hT0N9FznRjVLwEf75N'
+    @oauth_token = 'epsWOCTbU2yJkf6CvJ6MXs5Gaqwe98JYSDw4TFMFvYySYjHbmZ'
+    @oauth_token_secret = 'GV8OKKnlIy4JP0lWXbGx7glzZ8OE6HWaWLQ6QhzjWbvOht8ZnU'
+
+    # Sets the client that allows interfacing with Tumblr
+    @myClient = Tumblr::Client.new(
+      :consumer_key => @key,
+      :consumer_secret => @secret,
+      :oauth_token => @oauth_token,
+      :oauth_token_secret => @oauth_token_secret
+    )
+
+    @posts = @myClient.posts("ahau.tumblr.com", :limit => 10)
+    @posts = @posts["posts"]
   end
 
   # GET /blogs/1

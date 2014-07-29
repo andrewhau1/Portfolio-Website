@@ -1,31 +1,47 @@
 body {
-  background-color: #fff;
-  color: #333;
-  font-family: verdana, arial, helvetica, sans-serif;
+  background-color: #dbdbdb;
+  color: #2B2B2B;
+  font-family: 'Quicksand', sans-serif, 'Marcellus', serif;
   font-size: 13px;
   line-height: 18px;
+  font-weight: 400;
+}
+
+h1, h3, h4, h5, h6 {
+  font-family: 'Ubuntu', 'Maven Pro', sans-serif; 
+  font-size: 20px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+h2{
+  font-family: 'Ubuntu', 'Maven Pro', sans-serif; 
+  font-size: 20px;
+  line-height: 18px;
+  font-weight: 500;
+  font-color: 000;
 }
 
 p, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
+  font-family: 'Quicksand', sans-serif, 'Marcellus', serif;
   font-size: 13px;
   line-height: 18px;
+  font-weight: 400;
 }
 
 pre {
-  background-color: #eee;
+  background-color: #E9E581;
   padding: 10px;
   font-size: 11px;
 }
 
 a {
-  color: #000;
+  color: #ffa500;
   &:visited {
-    color: #666;
+    color: #cc8400;
   }
   &:hover {
-    color: #fff;
-    background-color: #000;
+    color: #DE1B1B;
   }
 }
 

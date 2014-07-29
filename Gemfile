@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'tumblr_client'
+
 gem 'twitter-bootstrap-rails'
 gem 'less-rails'
 

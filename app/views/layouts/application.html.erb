@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400|Ubuntu:300,400|Marcellus|Maven+Pro:400,500' rel='stylesheet' type='text/css'>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= content_for?(:title) ? yield(:title) : "Andrew-Au.com" %></title>
+    <title><%= content_for?(:title) ? yield(:title) : "Andrew Au - Ruby on Rails Developer" %></title>
     <%= csrf_meta_tags %>
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
@@ -52,7 +53,7 @@
               <li><%= link_to "About", "/about"  %></li>
               <li><%= link_to "Urban Eagles", "/urban_eagles"  %></li>
               <li><%= link_to "Portfolio", "/portfolio"  %></li>
-              <li><%= link_to "Blog", "/blog"  %></li>
+              <!-- <li><%= link_to "Blog", "/blog"  %></li> -->
               <li><%= link_to "Contact", "/contact"  %></li>
             </ul>
           </div><!--/.nav-collapse -->
@@ -68,21 +69,21 @@
           </div>
           <div class="span3">
             <div class="well sidebar-nav">
-              <h3>BE SOCIAL</h3>
+              <h2>BE SOCIAL</h2>
               <ul class="nav nav-list">
                 <li class="nav-header">My Social Networks</li>
-                <li><%= link_to "Twitter", "http://Twitter.com/andrewHau"  %></li>
-                <li><%= link_to "Facebook", "http://Facebook.com/andrewHau1"  %></li>
-                <li><%= link_to "Linkedin", "http://Linkedin.com/in/andrewHau"  %></li>
-                <li><%= link_to "Instagram", "http://Instagram.com/andrewHau"  %></li>
-                <li><%= link_to "Github", "http://Github.com/andrewhau1"  %></li>
+                <li><%= link_to "Twitter", "http://Twitter.com/andrewHau", :target=>"_blank" %></li>
+                <li><%= link_to "Facebook", "http://Facebook.com/andrewHau1", :target=>"_blank" %></li>
+                <li><%= link_to "Linkedin", "http://Linkedin.com/in/andrewHau", :target=>"_blank" %></li>
+                <li><%= link_to "Instagram", "http://Instagram.com/andrewHau", :target=>"_blank" %></li>
+                <li><%= link_to "Github", "http://Github.com/andrewhau1", :target=>"_blank" %></li>
               </ul>
             </div><!--/.well -->
           </div><!--/span-->
         </div><!--/row-->
 
       <footer>
-        <p>&copy; Company 2014</p>
+        <p>&copy; Andrew Au 2014</p>
       </footer>
 
     </div> <!-- /container -->
